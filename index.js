@@ -353,10 +353,10 @@ it gets to 1 bottle left.
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(number){
+function annoyingSong(number) {
     
 
-  for (let i = 0; i > number; i--){
+  for (let i = 0; i > number; i--) {
 
     return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i -1} bottles of soda on the wall`;
   
@@ -436,9 +436,26 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  
+var vowel = ["aeiou"];
+var count = 0;
+
+
+for( var i = 0; i<str.length; i++){
+
+  if(vowel.includes(str[i].toLowerCase())){
+
+    count++;
+
+  }
+
 }
+
+}
+
+console.log(vowelCounter('hello'))
+
 
 
 
